@@ -82,13 +82,13 @@ Server component (express) (Part 4)
 -----------------------------------
 
 ```
-npm install —save express socket.io
+npm install —-save express socket.io
 ```
 
 Create server.js
 
 ```
-npm i -S react-router-bootstrap
+npm install --save react-router-bootstrap
 ```
 
 * clean up errors / warnings
@@ -102,11 +102,10 @@ Database and socket.io server (Part 5)
 
 ```
 brew install rethinkdb
-npm i -S rethinkdbdash
+npm install --save rethinkdbdash
 ```
 
 * create schema.js and execute
-
 * create socket server
 * add socket.io to index.html
 * handle incoming messages
@@ -114,19 +113,12 @@ npm i -S rethinkdbdash
 
 Sending messages (Part 6)
 -------------------------
-
+TBD
 
 Channels (Part 7)
 -----------------
-
+TBD
 
 React native client (Part 8)
 ----------------------------
-
-
-
-
-
-
-
-
+TBD
