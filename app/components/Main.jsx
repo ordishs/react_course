@@ -1,12 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-const Main = React.createClass({
-  render: function() {
+import Home from './Home.jsx'
+
+class Main extends React.Component {
+  render () {
     return (
-      <div>Hello world</div>
+      <Home />
     )
   }
-})
+}
 
 ReactDOM.render(<Main />, document.getElementById('app'))
