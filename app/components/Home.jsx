@@ -12,15 +12,32 @@ export default class Home extends React.Component {
   constructor (props) {
     super(props)
 
+    this.socket = io()
+
     this.state = {
-      messages: []
+      messages: [],
+      message: ''
     }
+
+    this.onChange = this.onChange.bind(this)
+    this.onClick = this.onClick.bind(this)
+  }
+
+  onChange (e) {
+    this.setState({
+      message: e.target.value
+    })
+  }
+
+  onClick (e) {
+    this.socket.emit('message', {message: this.state.message})
+    this.setState({
+      message: ''
+    })
   }
 
   componentWillMount () {
-    const socket = io()
-
-    socket.on('message', (data) => {
+    this.socket.on('message', (data) => {
       this.setState({
         messages: [...this.state.messages, data]
       })
@@ -42,6 +59,16 @@ export default class Home extends React.Component {
               <li>Where to eat</li>
               <li>Random</li>
             </ul>
+            <input
+              type='text'
+              value={this.state.message}
+              onChange={this.onChange}
+            />
+            <Button
+              onClick={this.onClick}
+            >
+              Send
+            </Button>
           </Col>
           <Col xs={12} md={8}>
             <Jumbotron>
