@@ -6,7 +6,7 @@ import {
   NavDropdown,
   MenuItem
 } from 'react-bootstrap'
-import {Link} from 'react-router'
+import {LinkContainer} from 'react-router-bootstrap'
 
 export default class Main extends React.Component {
   render () {
@@ -32,11 +32,9 @@ export default class Main extends React.Component {
               </NavDropdown>
             </Nav>
             <Nav pullRight>
-              <NavItem eventKey={1} href='#'>
-                <Link to='/help'>
-                  Help
-                </Link>
-              </NavItem>
+              <LinkContainer to='/help'>
+                <NavItem eventKey={4}>Help</NavItem>
+              </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
@@ -49,5 +47,5 @@ export default class Main extends React.Component {
 }
 
 Main.propTypes = {
-  children: PropTypes.array.isRequired
+  children: PropTypes.object.isRequired
 }
