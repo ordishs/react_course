@@ -1,3 +1,4 @@
+/* globals io */
 import React from 'react'
 import {
   Grid,
@@ -8,7 +9,29 @@ import {
 } from 'react-bootstrap'
 
 export default class Home extends React.Component {
+  constructor (props) {
+    super(props)
+
+    this.state = {
+      messages: []
+    }
+  }
+
+  componentWillMount () {
+    const socket = io()
+
+    socket.on('message', (data) => {
+      this.setState({
+        messages: [...this.state.messages, data]
+      })
+    })
+  }
+
   render () {
+    const messages = this.state.messages.map((message) => {
+      return <Row key={message.id}><Col xs={12} md={8}>{JSON.stringify(message)}</Col></Row>
+    })
+
     return (
       <Grid>
         <Row>
@@ -28,6 +51,7 @@ export default class Home extends React.Component {
             </Jumbotron>
           </Col>
         </Row>
+        {messages}
       </Grid>
     )
   }
