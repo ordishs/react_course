@@ -113,7 +113,15 @@ npm install --save rethinkdbdash
 
 Sending messages (Part 6)
 -------------------------
-TBD
+* input box
+* state
+* pure functions
+
+
+Redux (Part 7)
+--------------
+
+
 
 Channels (Part 7)
 -----------------
@@ -121,4 +129,10 @@ TBD
 
 React native client (Part 8)
 ----------------------------
-TBD
+```
+brew install watchman
+npm install -g react-native-cli
+react-native init mobile
+cd mobile
+react-native run-ios
+```
