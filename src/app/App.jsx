@@ -6,16 +6,16 @@ import {
   IndexRoute,
   hashHistory
 } from 'react-router'
-import Main from '../app/components/Main.jsx'
-import Home from '../app/components/Home.jsx'
+import Navigation from '../app/components/Navigation.jsx'
+import MessageContainer from '../app/components/MessageContainer.jsx'
 import Help from '../app/components/Help.jsx'
 
 ReactDOM.render(
   <Router history={hashHistory}>
-    <Route path='/' component={Main}>
+    <Route path='/' component={Navigation}>
       <Route path='help' component={Help} />3
 
-      <IndexRoute component={Home} />
+      <IndexRoute component={MessageContainer} />
     </Route>
   </Router>,
   document.getElementById('app')

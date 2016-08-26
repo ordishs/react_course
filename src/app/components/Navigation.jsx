@@ -8,7 +8,7 @@ import {
 } from 'react-bootstrap'
 import {LinkContainer} from 'react-router-bootstrap'
 
-export default class Main extends React.Component {
+export default class Navigation extends React.Component {
   render () {
     return (
       <div className='main-container'>
@@ -46,6 +46,6 @@ export default class Main extends React.Component {
   }
 }
 
-Main.propTypes = {
+Navigation.propTypes = {
   children: PropTypes.object.isRequired
 }

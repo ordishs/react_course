@@ -7,15 +7,18 @@ import {
   Jumbotron,
   Button
 } from 'react-bootstrap'
+import {observer} from 'mobx-react'
 
-export default class Home extends React.Component {
+import store from './MessageStore'
+
+@observer
+export default class MessageContainer extends React.Component {
   constructor (props) {
     super(props)
 
     this.socket = io()
 
     this.state = {
-      messages: [],
       message: ''
     }
 
@@ -38,15 +41,13 @@ export default class Home extends React.Component {
 
   componentWillMount () {
     this.socket.on('message', (data) => {
-      this.setState({
-        messages: [...this.state.messages, data]
-      })
+      store.messages.push(data)
     })
   }
 
   render () {
-    const messages = this.state.messages.map((message) => {
-      return <Row key={message.id}><Col xs={12} md={8}>{JSON.stringify(message)}</Col></Row>
+    const messages = store.messages.map((message) => {
+      return <Row key={message.id}><Col xs={12} md={8}>{message.message}</Col></Row>
     })
 
     return (

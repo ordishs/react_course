@@ -13,7 +13,7 @@ const r = require('rethinkdbdash')(({
 app.use(express.static(`${__dirname}/public`))
 
 // not found in static files, so default to index.html
-app.use((req, res) => res.sendFile(`${__dirname}/public/index.html`))
+app.use((req, res) => res.sendFile(`${__dirname}/src/index.html`))
 
 io.on('connection', function (socket) {
   console.log('a user connected')
