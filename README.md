@@ -120,17 +120,6 @@ Sending messages (Part 6)
 
 State (Part 7)
 --------------
-* Redux
-* mobX
-
-
-
-Channels (Part 7)
------------------
-TBD
-
-React native client (Part 8)
-----------------------------
 ```
 brew install watchman
 npm install -g react-native-cli
@@ -138,3 +127,16 @@ react-native init mobile
 cd mobile
 react-native run-ios
 ```
+
+
+State (Part 8)
+--------------
+* Redux
+* mobX
+
+Channels (Part 7)
+-----------------
+TBD
+
+React native client (Part 8)
+----------------------------
