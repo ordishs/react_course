@@ -18,7 +18,7 @@ Prerequisites
 
 Installation and Hello World (Part 1)
 -------------------------------------
-
+`git checkout part1`
 ```
 npm init -y
 npm install —-save react react-dom
@@ -118,8 +118,10 @@ Sending messages (Part 6)
 * pure functions
 
 
-Redux (Part 7)
+State (Part 7)
 --------------
+* Redux
+* mobX
 
 
 
