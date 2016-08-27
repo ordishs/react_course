@@ -1,5 +1,3 @@
-# react_course
-Accompanying source files for my React course
 Simon’s React Course
 ====================
 
@@ -53,7 +51,6 @@ npm install --save react-bootstrap
 
 * Convert Main.jsx to ES2015 class
 * Create Home.jsx
-
 * Discuss parent / child layout
 * className
 * lower case components vs Camel case
