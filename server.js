@@ -35,6 +35,7 @@ io.on('connection', function (socket) {
   })
 
   socket.on('message', function (data) {
+    data.timestamp = r.now()
     r.table('messages')
     .insert(data)
     .then((result) => {

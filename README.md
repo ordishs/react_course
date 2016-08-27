@@ -46,7 +46,7 @@ open index.html
 
 ES2015 classes and components (Part 2)
 --------------------------------------
-
+`git checkout part2`
 ```
 npm install --save react-bootstrap
 ```
@@ -61,6 +61,7 @@ npm install --save react-bootstrap
 
 Routing (Part 3)
 ----------------
+`git checkout part3`
 ```
 npm install --save react-router history
 ```
@@ -80,6 +81,7 @@ npm install --save react-router history
 
 Server component (express) (Part 4)
 -----------------------------------
+`git checkout part4`
 
 ```
 npm install —-save express socket.io
@@ -99,6 +101,7 @@ npm install --save react-router-bootstrap
 
 Database and socket.io server (Part 5)
 --------------------------------------
+`git checkout part5`
 
 ```
 brew install rethinkdb
@@ -113,13 +116,15 @@ npm install --save rethinkdbdash
 
 Sending messages (Part 6)
 -------------------------
+`git checkout part6`
 * input box
 * state
 * pure functions
 
 
-State (Part 7)
---------------
+React Native init (Part 7)
+--------------------------
+`git checkout part7`
 ```
 brew install watchman
 npm install -g react-native-cli
@@ -131,12 +136,22 @@ react-native run-ios
 
 State (Part 8)
 --------------
+`git checkout part8`
 * Redux
 * mobX
 
-Channels (Part 7)
------------------
-TBD
 
-React native client (Part 8)
-----------------------------
+Separate state (Part 9)
+-----------------------
+`git checkout part9`
+* Move all state logic into store
+* Tidy up application
+* Create separate React components
+* standard
+* standard --fix
+
+
+
+React native client (Part 10)
+-----------------------------
+`git checkout part10`
