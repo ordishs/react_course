@@ -20,7 +20,7 @@ io.on('connection', function (socket) {
   const cursors = []
 
   r.table('messages')
-  .changes()
+  .changes({includeInitial: true})
   .then((cursor) => {
     cursors.push(cursor)
     cursor.each((err, message) => {

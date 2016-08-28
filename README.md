@@ -148,7 +148,16 @@ Separate state (Part 9)
 * standard --fix
 
 
-
 React native client (Part 10)
 -----------------------------
 `git checkout part10`
+
+```
+npm install --save mobx mobx-react
+npm install --save socket.io-client
+npm install babel-plugin-transform-decorators-legacy babel-preset-react-native-stage-0 --save-dev
+```
+
+* Flex
+* style
+* CooePush
