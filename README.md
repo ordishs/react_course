@@ -134,6 +134,11 @@ react-native run-ios
 State (Part 8)
 --------------
 `git checkout part8`
+```
+npm install --save-dev babel-plugin-transform-class-properties babel-plugin-transform-decorators-legacy
+npm install --save-dev babel-plugin-transform-runtime babel-preset-es2015 babel-preset-react
+npm install --save babel-runtime mobx mobx-react react react-dom
+```
 * Redux
 * mobX
 
